@@ -26,7 +26,18 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js",
+              "src/assets/js/jquery.metisMenu.js",
+              "src/assets/js/morris/raphael-2.1.0.min.js",
+              "src/assets/js/morris/morris.js",
+              "src/assets/js/easypiechart.js",
+              "src/assets/js/easypiechart-data.js",
+              "src/assets/js/custom-scripts.js",
+              "src/assets/laydate/laydate.js"
+              
+            ]
           },
           "configurations": {
             "production": {

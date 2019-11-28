@@ -1,0 +1,10 @@
+@import "../../../../assets/css/custom-styles.css";
+
+
+.addsquare{
+    background-color: white;
+    width: 90%;
+    margin-left: 5%;
+    height: auto;
+}
+
