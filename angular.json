@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "OAfront": {
+    "angularOA": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/OAfront",
+            "outputPath": "dist/angularOA",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -21,23 +21,18 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
             ],
             "styles": [
+              "src/theme.less",
               "src/styles.css"
             ],
-            "scripts": [
-              "./node_modules/jquery/dist/jquery.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.js",
-              "src/assets/js/jquery.metisMenu.js",
-              "src/assets/js/morris/raphael-2.1.0.min.js",
-              "src/assets/js/morris/morris.js",
-              "src/assets/js/easypiechart.js",
-              "src/assets/js/easypiechart-data.js",
-              "src/assets/js/custom-scripts.js",
-              "src/assets/laydate/laydate.js"
-              
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -74,18 +69,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "OAfront:build"
+            "browserTarget": "angularOA:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "OAfront:build:production"
+              "browserTarget": "angularOA:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "OAfront:build"
+            "browserTarget": "angularOA:build"
           }
         },
         "test": {
@@ -122,15 +117,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "OAfront:serve"
+            "devServerTarget": "angularOA:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "OAfront:serve:production"
+              "devServerTarget": "angularOA:serve:production"
             }
           }
         }
       }
-    }},
-  "defaultProject": "OAfront"
+    }
+  },
+  "defaultProject": "angularOA"
 }
