@@ -8,7 +8,7 @@ import * as moment from 'moment';
   styleUrls: ['./addleave.component.css']
 })
 export class AddleaveComponent implements OnInit {
-
+  dateRange = [];
   leave_detail:any = {
     leave_type:'',
     start:'',
@@ -25,7 +25,7 @@ export class AddleaveComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
+
   }
   onSubmit(){
     let form_data = new FormData();
@@ -46,4 +46,9 @@ export class AddleaveComponent implements OnInit {
       }
     })
   }
+
+  onChange(result: Date): void {
+    console.log('onChange: ', result);
+  }
+
 }

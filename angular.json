@@ -32,7 +32,10 @@
               "src/theme.less",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js",
+              "src/assets/js/jquery.metisMenu.js"]
           },
           "configurations": {
             "production": {

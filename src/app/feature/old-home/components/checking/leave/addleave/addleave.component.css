@@ -1,4 +1,6 @@
-@import "../../../../../assets/css/custom-styles.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "../../../../assets/css/font-awesome.css";
+@import "../../../../assets/css/custom-styles.css";
 /* @import "../../../../../../node_modules/_bootstrap-datetimepicker@0.0.7@bootstrap-datetimepicker/src/js/locales/bootstrap-datetimepicker.zh-CN.js"; */
 
 

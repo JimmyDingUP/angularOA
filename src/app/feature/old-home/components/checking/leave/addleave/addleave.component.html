@@ -19,7 +19,7 @@
                                 <a href="#" class='font-style'>出差</a>
                                 <a href="#" class='font-style'>外出</a>
                                 <a href="#" class='font-style'>物品</a>
-    
+
                             </small>
                         </h1>
                         <ol class="breadcrumb">
@@ -30,9 +30,9 @@
                         </ol>
                     </div>
                 </div>
-                
-            
-                
+
+
+
 
                 <div class="row">
 
@@ -42,13 +42,13 @@
                                         请假申请（请按规则添加）
                                 </div>
 
-                                <div class="panel-body">
+                          <div class="panel-body">
                                     <div class="row" >
                                         <div class="col-md-8 col-md-offset-2" >
                                                 <p class="help-block"></p>
 
-                                                <form #myForm='ngForm' (ngSubmit)='onSubmit(myForm)' enctype='multipart/form-data' class="form-horizontal" role="form">
-              
+                                                <div class="form-horizontal">
+
                                                     <div class="form-group">
                                                             <label class="col-md-2 control-label">类型</label>
                                                             <div class="col-md-9">
@@ -58,7 +58,7 @@
                                                                 </select>
                                                         </div>
                                                     </div>
-                                                    
+
                                                     <div class="form-group">
                                                         <label class="col-md-2 control-label">开始时间</label>
                                                         <div class='col-md-9'>
@@ -91,13 +91,20 @@
                                                         </div>
                                                     </div>
 
+                                                  <div class="form-group">
+                                                    <label class="col-md-2 control-label">开始结束时间</label>
+                                                    <div class='col-md-9'>
+                                                      <nz-range-picker [(ngModel)]="dateRange" (ngModelChange)="onChange($event)"></nz-range-picker>
+                                                    </div>
+                                                  </div>
+
                                                     <div class="form-group">
                                                         <label class="col-md-2 control-label">请假天数</label>
                                                         <div class='col-md-9'>
                                                                 <input  [(ngModel)]="leave_detail.num" name="num" class="form-control" placeholder="请假天数">
                                                         </div>
                                                     </div>
-                                
+
                                                     <div class="form-group">
                                                         <label class="col-md-2 control-label">请假事由</label>
                                                         <div class='col-md-9'>
@@ -105,7 +112,7 @@
                                                             </textarea>
                                                         </div>
                                                     </div>
-                                
+
                                                     <div class="form-group">
                                                         <label class="col-md-2 control-label">审批人</label>
                                                         <div class='col-md-9'>
@@ -172,7 +179,7 @@
 
                                                         </div>
                                                     </div>
-                                
+
                                                     <div class="form-group">
                                                         <label class="col-md-2 control-label">抄送人</label>
                                                         <div class="col-md-9">
@@ -181,36 +188,36 @@
                                                                 </select>
                                                         </div>
                                                     </div>
-                                                    
 
-                                                   
-                                                    
 
-                                                    <div class="col-lg-offset-5"> 
-                                                            <button  type="submit" class="btn btn-primary" > 提交 </button>
+
+
+
+                                                    <div class="col-lg-offset-5">
+                                                            <button  type="submit" class="btn btn-primary" (click)="onSubmit()"> 提交 </button>
                                                     </div>
-                                                    
 
-                                                    </form>
 
-                                                    
+                                                    </div>
+
+
 
                                         </div>
 
-                                            
+
 
                                     </div>
-                                        
+
 
                                 </div>
-                                
+
 
                         </div>
-                            
+
 
 
                     </div>
-                    
+
                 </div>
                 <!-- /. ROW  -->
                 <footer><p>Copyright &copy; 2016.Company name All rights reserved.</p></footer>

@@ -1,4 +1,6 @@
-@import "../../../../assets/css/custom-styles.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "../../../assets/css/font-awesome.css";
+@import "../../../assets/css/custom-styles.css";
 
 
 .active-hover:hover {
