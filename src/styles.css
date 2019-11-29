@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import "static/css/bootstrap.css";*/
 
-@import "../node_modules/_bootstrap@3.3.4@bootstrap/dist/css/bootstrap.min.css";
-@import "assets/css/font-awesome.css"; 
+/*@import "../node_modules/_bootstrap@3.3.4@bootstrap/dist/css/bootstrap.min.css";*/
+@import "assets/css/font-awesome.css";
 @import "assets/js/morris/morris-0.4.3.min.css";
 @import "assets/laydate/theme/default/laydate.css";
 
